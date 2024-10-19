@@ -12,7 +12,8 @@ key.properties
 **/*.keystore
 **/*.jks
 
-# api keys sensitive info
+# google-services.json
+#sensitive info
 {
   "project_info": {
     "project_number": "206801060079",
@@ -42,3 +43,9 @@ key.properties
   ],
   "configuration_version": "1"
 }
+
+
+
+#firebase.json
+
+{"flutter":{"platforms":{"android":{"default":{"projectId":"hey-chat-e7ad0","appId":"1:206801060079:android:a1fbe2b05bd1ab78969b1a","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"hey-chat-e7ad0","configurations":{"android":"1:206801060079:android:a1fbe2b05bd1ab78969b1a"}}}}}}
