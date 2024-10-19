@@ -11,3 +11,34 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+
+# api keys sensitive info
+{
+  "project_info": {
+    "project_number": "206801060079",
+    "project_id": "hey-chat-e7ad0",
+    "storage_bucket": "hey-chat-e7ad0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206801060079:android:a1fbe2b05bd1ab78969b1a",
+        "android_client_info": {
+          "package_name": "com.bhavya.hey_chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCbOw-OIuUXl-U34r1ZA8-yn2nGZZmIfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
