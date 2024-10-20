@@ -11,8 +11,14 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+<<<<<<< HEAD
 # google-services.json
 
+=======
+
+# google-services.json
+#sensitive info
+>>>>>>> d818d2bb0b8bab4d4631b1624e1c0bf20a5accd2
 {
   "project_info": {
     "project_number": "206801060079",
@@ -27,6 +33,7 @@ key.properties
           "package_name": "com.bhavya.hey_chat"
         }
       },
+<<<<<<< HEAD
       "oauth_client": [
         {
           "client_id": "206801060079-a5jdvhar41nspd553a06ffvsvhk0cpdk.apps.googleusercontent.com",
@@ -41,6 +48,9 @@ key.properties
           "client_type": 3
         }
       ],
+=======
+      "oauth_client": [],
+>>>>>>> d818d2bb0b8bab4d4631b1624e1c0bf20a5accd2
       "api_key": [
         {
           "current_key": "AIzaSyBCbOw-OIuUXl-U34r1ZA8-yn2nGZZmIfQ"
@@ -48,12 +58,16 @@ key.properties
       ],
       "services": {
         "appinvite_service": {
+<<<<<<< HEAD
           "other_platform_oauth_client": [
             {
               "client_id": "206801060079-crikfevmp3002eietfein732333etafk.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
+=======
+          "other_platform_oauth_client": []
+>>>>>>> d818d2bb0b8bab4d4631b1624e1c0bf20a5accd2
         }
       }
     }
@@ -61,6 +75,14 @@ key.properties
   "configuration_version": "1"
 }
 
+<<<<<<< HEAD
 # firebase.json
 
 {"flutter":{"platforms":{"android":{"default":{"projectId":"hey-chat-e7ad0","appId":"1:206801060079:android:a1fbe2b05bd1ab78969b1a","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"hey-chat-e7ad0","configurations":{"android":"1:206801060079:android:a1fbe2b05bd1ab78969b1a"}}}}}}
+=======
+
+
+#firebase.json
+
+{"flutter":{"platforms":{"android":{"default":{"projectId":"hey-chat-e7ad0","appId":"1:206801060079:android:a1fbe2b05bd1ab78969b1a","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"hey-chat-e7ad0","configurations":{"android":"1:206801060079:android:a1fbe2b05bd1ab78969b1a"}}}}}}
+>>>>>>> d818d2bb0b8bab4d4631b1624e1c0bf20a5accd2
