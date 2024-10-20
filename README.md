@@ -1,47 +1,30 @@
-plugins {
-    id "com.android.application"
-    // START: FlutterFire Configuration
-    id 'com.google.gms.google-services'
-    // END: FlutterFire Configuration
-    id "kotlin-android"
-    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
-    id "dev.flutter.flutter-gradle-plugin"
-}
+# Hey Chat
 
-android {
-    namespace = "com.bhavya.hey_chat"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+Hey Chat is a Flutter-based chat application designed to facilitate real-time communication among users. With features like Google Sign-In and an intuitive user interface, Hey Chat aims to provide a seamless chatting experience.
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
+## Features
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
-    }
+- **User Authentication**: Users can sign in using their Google accounts.
+- **Real-time Messaging**: Chat with friends in real time.
+- **User Profiles**: Create and manage user profiles.
+- **Responsive Design**: Optimized for both mobile and desktop devices.
+- **Dark Mode Support**: Toggle between light and dark themes.
 
-    defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.bhavya.hey_chat"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = 23
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
-    }
+## Technologies Used
 
-    buildTypes {
-        release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.debug
-        }
-    }
-}
+- **Flutter**: Framework for building natively compiled applications for mobile and web.
+- **Firebase**: Used for backend services such as authentication and real-time database.
+- **Dart**: The programming language used to write the application.
 
-flutter {
-    source = "../.."
-}
+## Installation
+
+### Prerequisites
+
+- [Flutter](https://flutter.dev/docs/get-started/install) SDK
+- [Dart](https://dart.dev/get-dart)
+
+### Steps to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/bhavya-j231/hey_chat.git
