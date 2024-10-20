@@ -11,3 +11,56 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+# google-services.json
+
+{
+  "project_info": {
+    "project_number": "206801060079",
+    "project_id": "hey-chat-e7ad0",
+    "storage_bucket": "hey-chat-e7ad0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206801060079:android:a1fbe2b05bd1ab78969b1a",
+        "android_client_info": {
+          "package_name": "com.bhavya.hey_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206801060079-a5jdvhar41nspd553a06ffvsvhk0cpdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bhavya.hey_chat",
+            "certificate_hash": "084e48000accd97f59bda5dfd051aa7860d893e8"
+          }
+        },
+        {
+          "client_id": "206801060079-crikfevmp3002eietfein732333etafk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCbOw-OIuUXl-U34r1ZA8-yn2nGZZmIfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206801060079-crikfevmp3002eietfein732333etafk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
+# firebase.json
+
+{"flutter":{"platforms":{"android":{"default":{"projectId":"hey-chat-e7ad0","appId":"1:206801060079:android:a1fbe2b05bd1ab78969b1a","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"hey-chat-e7ad0","configurations":{"android":"1:206801060079:android:a1fbe2b05bd1ab78969b1a"}}}}}}

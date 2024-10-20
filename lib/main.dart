@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/services.dart';
 import 'firebase_options.dart';
 import 'screens/splash_screen.dart';
 
@@ -8,8 +9,17 @@ import 'screens/splash_screen.dart';
 late Size mq;
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  _initializeFirebase();
+
+  // enter full screen
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  SystemChrome.setPreferredOrientations([
+   DeviceOrientation.portraitUp,
+   DeviceOrientation.portraitDown])
+   .then( (value) {
+    _initializeFirebase();
   runApp(const MyApp());
+   });
+  
 }
 
 class MyApp extends StatelessWidget {

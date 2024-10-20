@@ -12,7 +12,20 @@
           "package_name": "com.bhavya.hey_chat"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "206801060079-a5jdvhar41nspd553a06ffvsvhk0cpdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bhavya.hey_chat",
+            "certificate_hash": "084e48000accd97f59bda5dfd051aa7860d893e8"
+          }
+        },
+        {
+          "client_id": "206801060079-crikfevmp3002eietfein732333etafk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBCbOw-OIuUXl-U34r1ZA8-yn2nGZZmIfQ"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206801060079-crikfevmp3002eietfein732333etafk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

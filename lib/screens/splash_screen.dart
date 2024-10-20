@@ -1,7 +1,12 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:hey_chat/api/apis.dart';
 import 'package:hey_chat/screens/home_screen.dart';
 
 import '../../main.dart';
+import 'auth/login_screen.dart';
 
 // splash screen 
 class SplashScreen extends StatefulWidget {
@@ -19,26 +24,43 @@ class _SplashScreenState extends State<SplashScreen> {
 
     super.initState();
     Future.delayed(Duration(milliseconds: 3000), (){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const HomeScreen()));
+
+      // exit full screen
+      SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+      SystemChrome.setSystemUIOverlayStyle(
+        SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent
+          ));
+          
+          if(APIs.auth.currentUser != null){
+        log('\nUser: ${APIs.auth.currentUser}');
+
+          // navigate to home screen
+          Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (_) => const HomeScreen()));
+          } else {
+          // navigate to login screen
+          Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (_) => const LoginScreen()));
+          }
+
+
+     
+      
     });
   }
 
 
   @override
   Widget build(BuildContext context) {
+
+    // initializing media query for getting device screen size
     mq = MediaQuery.of(context).size;
 
 
     return Scaffold(
-      // app bar
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        // this adds the home icon at the top left of the home screen
-        title: const Text('Welcome to Hey Chat'),
-        // the below actions will generate icons like search and three vertical
-        // dots on the right hand side
-        
-      ),
+      
+      // body
       body: Stack(children: [
         // animated positioned will help to trigger animations but
         // to be used inside stack and 

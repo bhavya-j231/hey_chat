@@ -59,4 +59,5 @@ class DefaultFirebaseOptions {
     projectId: 'hey-chat-e7ad0',
     storageBucket: 'hey-chat-e7ad0.appspot.com',
   );
+
 }
